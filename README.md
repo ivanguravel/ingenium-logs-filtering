@@ -15,10 +15,7 @@ The design is optimized for horizontal scalability and minimal synchronization o
 ## Architecture
 
 - ![diagram](img/concept.png "concept")
-  Absolutely — here’s a **detailed English README** for your project, written at a professional, production-level standard.
-  It explains the architecture, concurrency model, and the purpose of each main class (especially `InvertedIndexEntry`).
 
----
 
 ## Overview
 
