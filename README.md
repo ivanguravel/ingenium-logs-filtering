@@ -207,3 +207,16 @@ List<String> suggestions = node.suggest("sea", 5);
 * **Search latency**: O(K) where K = number of matching shards (parallelizable)
 * **Memory footprint**: proportional to unique tokens (each stored once per shard)
 * **Autocomplete latency**: sub-millisecond for small to medium dictionaries
+
+---
+
+## TODO list:
+- from the following comment https://www.linkedin.com/feed/update/urn:li:activity:7391761220439191552?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7391761220439191552%2C7391855920403746816%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287391855920403746816%2Curn%3Ali%3Aactivity%3A7391761220439191552%29 
+1) Add visual use case, for example simple autocomplete for bash/sh console for each tool in manual, or similar. So student could se how this can be used locally
+2) I think algos that u use for this, as this an educational project should be written inside repo rather than used from lib.
+3) U can add stemming and lemming.
+4) Adding delete & compaction
+5) Add benchmark, so it possible to test solution and see speed metrics, regarding different use cases.
+6) Save/load to/from disk. 
+7) Add hot and cold shards, putting less often data to cold (disk shards), while more searched on hot shards.
+8) Add vector search for more complicated searches
